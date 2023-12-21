@@ -1,4 +1,4 @@
-int LED = 8 //Création du port 8 pour la LED
+int LED = 9 //Création du port 9 pour la LED
 
 void setup() {
    pinMode(LED, OUTPUT); //Initialisation du port 8 (LED) en sortie
