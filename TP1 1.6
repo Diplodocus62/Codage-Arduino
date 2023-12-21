@@ -1,1 +1,23 @@
+int LED = 9; //Créatio  du 
+int pot = A0; //
+int pot_value = 0;
+int intensite = 0;
+int photo_res = A1;
+int lumi = 0;
+
+void setup() {
+  pinMode(LED, OUTPUT);
+  pinMode(pot, INPUT);
+  Serial.begin(9600);
+  pinMode(photo_res, INPUT);
+}
+
+void loop() {
+  pot_value = analogRead(pot);
+  lumi = analogRead(photo_res);
+  Serial.println(lumi);
+  intensite = pot_value/4;
+  analogWrite(LED, intensite);
+  delay(50);
+}
 
