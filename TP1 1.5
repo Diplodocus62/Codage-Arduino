@@ -1,22 +1,15 @@
 int LED = 9; //Création du port 9 pour la led
 int pot = A0; //Création du port A0 pour le potentiomètre
 int pot_value = 0; //Création de la variable pot_value
-int intensite = 0; //Création de la variable intensite
-int photo_res = A1; //Création du port A1 pour la phtoresistance
-int lumi = 0; //Création de la variable lumi
 
 void setup() {
   pinMode(LED, OUTPUT); //Initialisation de LED en sortie
   pinMode(pot, INPUT); //Initialisation de pot en entrée
-  Serial.begin(9600); //Connexion au moniteur 9600
-  pinMode(photo_res, INPUT); //Initialisation de photo_res en entrée
 }
 
 void loop() {
   pot_value = analogRead(pot); //pot_value vaut la valeur lue de pot (port A0)
-  lumi = analogRead(photo_res); //lumi vaut la valeur lue de photo_res (port A1)
-  Serial.println(lumi); //écrire sur le moniteur la valeur lumi en passant des lignes
-  intensite = pot_value/4; //intensite vaut pot_value diviser par 4 (pour attenidre 255 au max)
-  analogWrite(LED, intensite); //mettre la luminosité de la led a la valeur de l'intensite
+  pot_value = pot_value/4; //intensite vaut pot_value diviser par 4 (pour attenidre 255 au max)
+  analogWrite(LED, pot_value); //mettre la luminosité de la led a la valeur de pot_value
   delay(50); //attendre 50ms
 }
