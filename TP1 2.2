@@ -26,7 +26,6 @@ void setup()
 
   //turn the PID on
   myPID.SetMode(AUTOMATIC);
-  Serial.begin(9600);
 }
 
 void loop()
@@ -37,7 +36,4 @@ void loop()
   Input = analogRead(PIN_INPUT);
   myPID.Compute();
   analogWrite(PIN_OUTPUT, Output);
-  Serial.println(Output);
-  Serial.print("   ");
-  Serial.println(pot);
 }
