@@ -36,3 +36,21 @@ Etape 3 : Mise en place d'une photorésistance
 -Connecter à l'autre borne une résistance et brancher en parallèle la pin A1
 
 -Connecter à la sortie de la résistance la masse 
+
+Lien des vidéos :
+
+1.1 : https://youtube.com/shorts/nsAOezG47eM?feature=share
+
+1.3 : https://youtube.com/shorts/u6n3Wfc92Qk?feature=share
+
+1.5 : https://youtube.com/shorts/_Fui9qLUhE8?feature=share
+
+1.6 : https://youtube.com/shorts/ma9CUfaiiP0?feature=share
+
+1.8 : https://youtube.com/shorts/0BpotsY0FXQ?feature=share
+
+2.1 : https://youtu.be/zv9QnZ-dqNk
+
+2.2 : https://youtu.be/18LHrBUdfOE
+
+2.4 : https://youtube.com/shorts/S_QJmTkrFkk?feature=share
